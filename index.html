@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Chandrashekhar H S — DevOps & SRE</title>
+    <meta name="description" content="Chandrashekhar H S — Reliability-focused DevOps engineer" />
+    <meta name="keywords" content="DevOps,SRE,Docker,AWS,Linux" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div id="loader" class="loader" aria-hidden="false">
+      <div class="loader-box">
+        <div class="loader-bar"><div id="loaderBar" aria-hidden="true"></div></div>
+        <div id="loaderText" aria-live="polite">INITIALIZING SYSTEM...</div>
+        <div id="loaderPct">0%</div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">&lt;CHS/&gt;</a>
+        <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+        <nav id="mainNav" class="nav">
+          <a href="#profile">Profile</a>
+          <a href="#stack">Stack</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1 class="name">Chandrashekhar <span class="family">H S</span></h1>
+            <p class="lead">DevOps Engineer · SRE Aspirant</p>
+            <p class="tagline">Designing resilient systems and automated delivery pipelines that scale.</p>
+            <p class="cta-row">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn ghost" href="#contact">Get in touch</a>
+            </p>
+          </div>
+
+          <aside class="hero-aside">
+            <div class="terminal" aria-hidden="false">
+              <div class="terminal-head">terminal — bash</div>
+              <div class="terminal-body" id="termScreen" aria-live="polite"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="profile" class="section reveal-up container">
+        <h2>Profile</h2>
+        <p>Reliability-driven engineer experienced with Linux, containers, CI/CD, and cloud infrastructure. I focus on automation, observability, and practical SRE practices.</p>
+      </section>
+
+      <section id="stack" class="section container reveal-up">
+        <h2>Core Stack</h2>
+        <div class="grid">
+          <div class="card">Linux</div>
+          <div class="card">Docker & Containers</div>
+          <div class="card">CI / CD</div>
+          <div class="card">AWS</div>
+          <div class="card">Monitoring</div>
+          <div class="card">Scripting (Bash)</div>
+        </div>
+      </section>
+
+      <section id="projects" class="section container reveal-up">
+        <h2>Projects</h2>
+        <div class="projects">
+          <article class="proj-card">
+            <h3>Dockerized Nginx Web App</h3>
+            <p>Optimized images, multi-stage builds, and automated deployment.</p>
+            <a class="link" href="https://github.com/Chandrashekhar-cloud" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+          </article>
+
+          <article class="proj-card">
+            <h3>Linux Admin Lab</h3>
+            <p>Practical exercises covering services, users, backups, and monitoring.</p>
+            <a class="link" href="https://github.com/Chandrashekhar-cloud" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+          </article>
+
+          <article class="proj-card">
+            <h3>Git Workflow & CI</h3>
+            <p>Clean Git history and CI pipelines for repeatable releases.</p>
+            <a class="link" href="https://github.com/Chandrashekhar-cloud" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section container reveal-up">
+        <h2>Get in Touch</h2>
+        <p class="contact-intro">Reach out via email or connect on social media</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/chandrashekharhs?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="btn primary">LinkedIn</a>
+          <a href="https://github.com/Chandrashekhar-cloud" target="_blank" rel="noopener noreferrer" class="btn ghost">GitHub</a>
+          <a href="mailto:chandrashekhar@example.com" class="btn ghost">Email</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p id="yr"></p>
+        <nav class="social">
+          <a href="https://github.com/Chandrashekhar-cloud" target="_blank" rel="noopener noreferrer" title="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/chandrashekharhs?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" title="LinkedIn">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
