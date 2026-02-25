@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Chandrashekhar H S — DevOps & SRE</title>
+    <meta name="description" content="Chandrashekhar H S — Reliability-focused DevOps engineer" />
+    <meta name="keywords" content="DevOps,SRE,Docker,AWS,Linux" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <a href="#main" class="sr-only focus-visible">Skip to main content</a>
+
+    <div id="loader" class="loader" aria-hidden="false">
+      <div class="loader-box">
+        <div class="loader-bar"><div id="loaderBar" aria-hidden="true"></div></div>
+        <div id="loaderText" aria-live="polite">INITIALIZING SYSTEM...</div>
+        <div id="loaderPct">0%</div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">&lt;CHS/&gt;</a>
+        <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+        <nav id="mainNav" class="nav">
+          <a href="#profile">Profile</a>
+          <a href="#stack">Stack</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1 class="name">DevOps & Infrastructure Engineer</h1>
+            <p class="subtitle">Building reliable, automated, observable systems</p>
+            <p class="hero-meta">Based on principles of SRE: measure what matters, automate boring tasks, focus on reliability through systems thinking.</p>
+            <p class="cta-row">
+              <a class="btn primary" href="#work">Explore Work</a>
+              <a class="btn ghost" href="#contact">Connect</a>
+            </p>
+          </div>
+
+          <aside class="hero-aside">
+            <div class="terminal" aria-hidden="false">
+              <div class="terminal-head">terminal — bash</div>
+              <div class="terminal-body" id="termScreen" aria-live="polite"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="profile" class="section reveal-up container">
+        <div class="section-header">
+          <h2>About</h2>
+          <p class="section-meta">Systems thinking, automation, reliability</p>
+        </div>
+        <div class="profile-grid">
+          <div class="profile-text">
+            <p>I build infrastructure that works reliably under pressure. My focus:</p>
+            <ul class="profile-bullets">
+              <li><strong>Automation first:</strong> Eliminate toil, document in code, enforce via CI/CD</li>
+              <li><strong>Observability by default:</strong> Logs, metrics, traces—not as afterthought</li>
+              <li><strong>Reliability through redundancy:</strong> Multi-region, graceful degradation, chaos testing</li>
+              <li><strong>Systems not silos:</strong> DevOps mindset: eng ↔ ops, shared responsibility</li>
+            </ul>
+          </div>
+          <div class="principles-card">
+            <h3>Optimization Targets</h3>
+            <div class="metrics-row">
+              <div class="metric">
+                <span class="metric-label">Uptime</span>
+                <span class="metric-value">99.9%+</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">MTTR</span>
+                <span class="metric-value">< 15m</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Deploy freq</span>
+                <span class="metric-value">Daily</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stack" class="section container reveal-up">
+        <div class="section-header">
+          <h2>Core Stack</h2>
+          <p class="section-meta">Daily tools, proven patterns</p>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <span class="card-emoji">🐧</span>
+            <div>Linux</div>
+            <span class="card-note">CentOS, Ubuntu, Alpine</span>
+          </div>
+          <div class="card">
+            <span class="card-emoji">🐳</span>
+            <div>Docker & Containers</div>
+            <span class="card-note">Multi-stage, image optimization</span>
+          </div>
+          <div class="card">
+            <span class="card-emoji">⚙️</span>
+            <div>CI/CD Pipelines</div>
+            <span class="card-note">GitFlow, automated testing</span>
+          </div>
+          <div class="card">
+            <span class="card-emoji">☁️</span>
+            <div>AWS</div>
+            <span class="card-note">EC2, RDS, S3, VPC, CloudWatch</span>
+          </div>
+          <div class="card">
+            <span class="card-emoji">📊</span>
+            <div>Monitoring & Logs</div>
+            <span class="card-note">CloudWatch, structured logging</span>
+          </div>
+          <div class="card">
+            <span class="card-emoji">🔧</span>
+            <div>Scripting (Bash, Python)</div>
+            <span class="card-note">Automation-first mindset</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section container reveal-up">
+        <div class="section-header">
+          <h2>Work & Projects</h2>
+          <p class="section-meta">Problem → Approach → Outcome</p>
+        </div>
+        <div class="projects">
+          <article class="proj-card">
+            <div class="proj-badge">Docker</div>
+            <h3>Optimized Container Deployment Pipeline</h3>
+            <p class="proj-problem"><strong>Problem:</strong> Large, inefficient Docker images increased build time and deployment overhead.</p>
+            <p class="proj-approach"><strong>Approach:</strong> Implemented multi-stage builds, layer caching strategy, and image scanning. Reduced Nginx base image from 540MB to 45MB.</p>
+            <p class="proj-impact"><strong>Impact:</strong> 85% faster image builds, reduced registry storage by 73%, improved security scanning performance. &rarr; Deployment cycle: 45m → 8m.</p>
+            <a class="link" href="https://github.com/Chandrashekhar-cloud" target="_blank" rel="noopener noreferrer">View Repository →</a>
+          </article>
+
+          <article class="proj-card">
+            <div class="proj-badge">Linux</div>
+            <h3>Linux Systems Administration & Hardening</h3>
+            <p class="proj-problem"><strong>Problem:</strong> Manual server setup, inconsistent configurations, security vulnerabilities across infrastructure.</p>
+            <p class="proj-approach"><strong>Approach:</strong> Built automated setup labs using shell scripts. Documented user/group management, service configuration, SELinux policies, automated log rotation, backup scheduling, and monitoring integration.</p>
+            <p class="proj-impact"><strong>Impact:</strong> Standardized 40+ system configurations, reduced manual config time by 90%, documented audit trail for compliance. Reusable playbooks for future deployments.</p>
+            <a class="link" href="https://github.com/Chandrashekhar-cloud" target="_blank" rel="noopener noreferrer">View Repository →</a>
+          </article>
+
+          <article class="proj-card">
+            <div class="proj-badge">CI/CD</div>
+            <h3>GitFlow & Automated Release Pipeline</h3>
+            <p class="proj-problem"><strong>Problem:</strong> Manual versioning, inconsistent commit messages, ad-hoc release process leading to human errors.</p>
+            <p class="proj-approach"><strong>Approach:</strong> Implemented GitFlow branching model with pre-commit hooks, conventional commits validation, automated semantic versioning, and gated CI checks (tests, linting, security scanning).</p>
+            <p class="proj-impact"><strong>Impact:</strong> Zero manual versioning errors, audit-ready commit history, automated changelog generation, release frequency 3x with confidence. Full reproducibility for rollbacks.</p>
+            <a class="link" href="https://github.com/Chandrashekhar-cloud" target="_blank" rel="noopener noreferrer">View Repository →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" style="display:none"></section>
+
+      <section class="section container reveal-up">
+        <div class="section-header">
+          <h2>Current Focus</h2>
+          <p class="section-meta">Learning and building in 2025</p>
+        </div>
+        <div class="focus-grid">
+          <div class="focus-item">
+            <h3>Infrastructure as Code</h3>
+            <p>Terraform + Ansible for multi-environment consistency. Reducing manual config drift through declarative automation.</p>
+          </div>
+          <div class="focus-item">
+            <h3>Observability at Scale</h3>
+            <p>Prometheus + Grafana + ELK stack for real-time system visibility. SLA tracking and alerting rules that don't cry wolf.</p>
+          </div>
+          <div class="focus-item">
+            <h3>Kubernetes in Production</h3>
+            <p>Container orchestration patterns, resource management, auto-scaling, and security hardening for production workloads.</p>
+          </div>
+          <div class="focus-item">
+            <h3>Incident Response & Post-Mortems</h3>
+            <p>Blameless post-mortems, RCA techniques, and systemic improvements. Building cultures where failures lead to learning.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section container reveal-up">
+        <div class="section-header">
+          <h2>Let's Connect</h2>
+          <p class="section-meta">Open to opportunities, collaboration, and technical discussions</p>
+        </div>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/chandrashekharhs?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="btn primary">LinkedIn</a>
+          <a href="https://github.com/Chandrashekhar-cloud" target="_blank" rel="noopener noreferrer" class="btn ghost">GitHub</a>
+          <a href="mailto:chandrashekhar@example.com" class="btn ghost">Email</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p id="yr"></p>
+        <nav class="social">
+          <a href="https://github.com/Chandrashekhar-cloud" target="_blank" rel="noopener noreferrer" title="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/chandrashekharhs?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" title="LinkedIn">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
